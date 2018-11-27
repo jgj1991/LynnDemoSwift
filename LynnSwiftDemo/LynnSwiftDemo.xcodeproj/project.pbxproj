@@ -13,9 +13,9 @@
 		06B9264C21ACD9B9001723BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06B9264B21ACD9B9001723BC /* Assets.xcassets */; };
 		06B9264F21ACD9B9001723BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B9264D21ACD9B9001723BC /* LaunchScreen.storyboard */; };
 		06B9265A21ACD9B9001723BC /* LynnSwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B9265921ACD9B9001723BC /* LynnSwiftDemoTests.swift */; };
-		06B9266821ACDB1A001723BC /* MoyaTargetTypeEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B9266521ACDB1A001723BC /* MoyaTargetTypeEx.swift */; };
-		06B9266921ACDB1A001723BC /* MoyaNetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B9266621ACDB1A001723BC /* MoyaNetworkConfig.swift */; };
-		06B9266A21ACDB1A001723BC /* SwiftNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B9266721ACDB1A001723BC /* SwiftNetworkManager.swift */; };
+		06B926A721ACE84D001723BC /* MoyaTargetTypeEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B926A621ACE84D001723BC /* MoyaTargetTypeEx.swift */; };
+		06B926A921ACE981001723BC /* SwiftNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B926A821ACE981001723BC /* SwiftNetworkManager.swift */; };
+		06B926AB21ACE9AE001723BC /* MoyaNetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B926AA21ACE9AD001723BC /* MoyaNetworkConfig.swift */; };
 		6DEFFDA47A4949AE4D3042C9 /* libPods-LynnSwiftDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2BA66AF85D0C771618B22E /* libPods-LynnSwiftDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -40,9 +40,9 @@
 		06B9265521ACD9B9001723BC /* LynnSwiftDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LynnSwiftDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B9265921ACD9B9001723BC /* LynnSwiftDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LynnSwiftDemoTests.swift; sourceTree = "<group>"; };
 		06B9265B21ACD9B9001723BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		06B9266521ACDB1A001723BC /* MoyaTargetTypeEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaTargetTypeEx.swift; sourceTree = "<group>"; };
-		06B9266621ACDB1A001723BC /* MoyaNetworkConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaNetworkConfig.swift; sourceTree = "<group>"; };
-		06B9266721ACDB1A001723BC /* SwiftNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftNetworkManager.swift; sourceTree = "<group>"; };
+		06B926A621ACE84D001723BC /* MoyaTargetTypeEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaTargetTypeEx.swift; sourceTree = "<group>"; };
+		06B926A821ACE981001723BC /* SwiftNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftNetworkManager.swift; sourceTree = "<group>"; };
+		06B926AA21ACE9AD001723BC /* MoyaNetworkConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaNetworkConfig.swift; sourceTree = "<group>"; };
 		0F2BA66AF85D0C771618B22E /* libPods-LynnSwiftDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LynnSwiftDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4940D6131B1758984585C7D4 /* Pods-LynnSwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LynnSwiftDemo.release.xcconfig"; path = "Target Support Files/Pods-LynnSwiftDemo/Pods-LynnSwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		6F0A186DC0EAF0B12DA8B713 /* Pods-LynnSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LynnSwiftDemo.debug.xcconfig"; path = "Target Support Files/Pods-LynnSwiftDemo/Pods-LynnSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 		06B9264321ACD9B8001723BC /* LynnSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
-				06B9266421ACDB1A001723BC /* NetWork */,
+				06B926A521ACE810001723BC /* NetWork */,
 				06B9264421ACD9B8001723BC /* AppDelegate.swift */,
 				06B9264621ACD9B8001723BC /* ViewController.swift */,
 				06B9264821ACD9B8001723BC /* Main.storyboard */,
@@ -110,15 +110,14 @@
 			path = LynnSwiftDemoTests;
 			sourceTree = "<group>";
 		};
-		06B9266421ACDB1A001723BC /* NetWork */ = {
+		06B926A521ACE810001723BC /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
-				06B9266521ACDB1A001723BC /* MoyaTargetTypeEx.swift */,
-				06B9266621ACDB1A001723BC /* MoyaNetworkConfig.swift */,
-				06B9266721ACDB1A001723BC /* SwiftNetworkManager.swift */,
+				06B926A621ACE84D001723BC /* MoyaTargetTypeEx.swift */,
+				06B926AA21ACE9AD001723BC /* MoyaNetworkConfig.swift */,
+				06B926A821ACE981001723BC /* SwiftNetworkManager.swift */,
 			);
-			name = NetWork;
-			path = ../../../LynnFiveLine/LynnFiveLine/NetWork;
+			path = NetWork;
 			sourceTree = "<group>";
 		};
 		64A8A5F44C1C434DC7ABCBDB /* Frameworks */ = {
@@ -265,11 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06B9266921ACDB1A001723BC /* MoyaNetworkConfig.swift in Sources */,
 				06B9264721ACD9B8001723BC /* ViewController.swift in Sources */,
+				06B926AB21ACE9AE001723BC /* MoyaNetworkConfig.swift in Sources */,
 				06B9264521ACD9B8001723BC /* AppDelegate.swift in Sources */,
-				06B9266A21ACDB1A001723BC /* SwiftNetworkManager.swift in Sources */,
-				06B9266821ACDB1A001723BC /* MoyaTargetTypeEx.swift in Sources */,
+				06B926A921ACE981001723BC /* SwiftNetworkManager.swift in Sources */,
+				06B926A721ACE84D001723BC /* MoyaTargetTypeEx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
