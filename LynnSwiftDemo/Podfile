@@ -1,0 +1,14 @@
+target:LynnSwiftDemo do
+#swift
+pod 'IGListKit', '~> 3.0'
+pod 'SnapKit', '~> 4.0.0'
+pod 'Moya/RxSwift'
+pod 'SwiftyJSON', '~> 4.0'
+pod 'HandyJSON', '~> 4.2.0'
+# RAC
+pod 'RxCocoa'
+pod 'RxSwift'
+pod 'PromiseKit/UIKit'
+pod 'GTMNSStringHTMLAdditions' # HTML 转义字符
+end
+
