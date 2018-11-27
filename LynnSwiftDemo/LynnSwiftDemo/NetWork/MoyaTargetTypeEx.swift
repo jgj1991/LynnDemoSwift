@@ -13,21 +13,6 @@ import SwiftyJSON
 
 let baseUrl =  "http://api.bbwansha.com:8080"
 
-extension TargetType {
-    var baseURL: URL {
-        let baseUrlStr : String = baseUrl
-        return URL.init(string: baseUrlStr)!
-    }
-    
-    var sampleData: Data {
-        return "".data(using: String.Encoding.utf8)!
-    }
-    
-    var headers: [String : String]? {
-        return ["Content-type": "application/json"]
-    }
-}
-
 /// 通用请求TargetType
 ///
 /// - getRequest: get请求   urlPath   Parameters
@@ -45,8 +30,17 @@ enum CommonTargetTypeApi {
     case downloadWithParams(String, [String: Any], Moya.DownloadDestination)
 }
 
-
 extension CommonTargetTypeApi: TargetType {
+    
+    var baseURL: URL {
+        let baseUrlStr : String = baseUrl
+        return URL.init(string: baseUrlStr)!
+    }
+    
+    var sampleData: Data {
+        return "".data(using: String.Encoding.utf8)!
+    }
+    
     var path: String {
         switch self {
         case .getRequest(let urlPath, _):
