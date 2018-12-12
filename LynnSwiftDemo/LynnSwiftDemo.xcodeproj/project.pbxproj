@@ -16,7 +16,7 @@
 		06B926A721ACE84D001723BC /* MoyaTargetTypeEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B926A621ACE84D001723BC /* MoyaTargetTypeEx.swift */; };
 		06B926A921ACE981001723BC /* SwiftNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B926A821ACE981001723BC /* SwiftNetworkManager.swift */; };
 		06B926AB21ACE9AE001723BC /* MoyaNetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B926AA21ACE9AD001723BC /* MoyaNetworkConfig.swift */; };
-		6DEFFDA47A4949AE4D3042C9 /* libPods-LynnSwiftDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2BA66AF85D0C771618B22E /* libPods-LynnSwiftDemo.a */; };
+		BFBBEBCE4B0585E0B625289E /* Pods_LynnSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DB90A3ECF29CA9761D606D /* Pods_LynnSwiftDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,9 +43,9 @@
 		06B926A621ACE84D001723BC /* MoyaTargetTypeEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaTargetTypeEx.swift; sourceTree = "<group>"; };
 		06B926A821ACE981001723BC /* SwiftNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftNetworkManager.swift; sourceTree = "<group>"; };
 		06B926AA21ACE9AD001723BC /* MoyaNetworkConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaNetworkConfig.swift; sourceTree = "<group>"; };
-		0F2BA66AF85D0C771618B22E /* libPods-LynnSwiftDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LynnSwiftDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4940D6131B1758984585C7D4 /* Pods-LynnSwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LynnSwiftDemo.release.xcconfig"; path = "Target Support Files/Pods-LynnSwiftDemo/Pods-LynnSwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		6F0A186DC0EAF0B12DA8B713 /* Pods-LynnSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LynnSwiftDemo.debug.xcconfig"; path = "Target Support Files/Pods-LynnSwiftDemo/Pods-LynnSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		D0DB90A3ECF29CA9761D606D /* Pods_LynnSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LynnSwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DEFFDA47A4949AE4D3042C9 /* libPods-LynnSwiftDemo.a in Frameworks */,
+				BFBBEBCE4B0585E0B625289E /* Pods_LynnSwiftDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,7 +123,7 @@
 		64A8A5F44C1C434DC7ABCBDB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0F2BA66AF85D0C771618B22E /* libPods-LynnSwiftDemo.a */,
+				D0DB90A3ECF29CA9761D606D /* Pods_LynnSwiftDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -148,6 +148,7 @@
 				06B9263D21ACD9B8001723BC /* Sources */,
 				06B9263E21ACD9B8001723BC /* Frameworks */,
 				06B9263F21ACD9B8001723BC /* Resources */,
+				D4E6AF7CE45595658D61C937 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -255,6 +256,50 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4E6AF7CE45595658D61C937 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LynnSwiftDemo/Pods-LynnSwiftDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMNSStringHTMLAdditions/GTMNSStringHTMLAdditions.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/IGListKit/IGListKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMNSStringHTMLAdditions.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IGListKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LynnSwiftDemo/Pods-LynnSwiftDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

@@ -17,7 +17,7 @@ struct FLBannerModel: HandyJSON {
     let banner_post_id: String = ""
     let banner_tag_id: String = ""
     let banner_h5_link: String = ""
-    let banner_image_url: String =   fddf""
+    let banner_image_url: String = ""
 }
 
 
